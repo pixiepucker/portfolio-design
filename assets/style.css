@@ -59,10 +59,11 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #f9afbc;
-    color: #caffd0;
+    background-color: #ffdb70;
+    color: #e79aa9;
     border: #e79aa9 solid 1px;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 /*hero style start*/
@@ -193,4 +194,60 @@ header nav ul li a:hover {
     width: 250px;
     height: 250px;
     border: #ffd147 solid 3px;
+}
+
+/*contact me style start */
+.contact {
+    width: 100%;
+    bottom: 0;
+    padding: 10px 18px;
+    background-color: #fee6ed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact p {
+    color: #202a25;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-style: italic;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-info {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.contact-info ul li a {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1.45vw;
+    font-style: italic;
+    text-decoration: none;
+    color: #202a25;
+}
+
+.contact-info ul li a:hover {
+    padding: 10px;
+    color: #e79aa9;
+    background-color: #ffd147;
+    border: #e79aa9 solid 1px;
+    border-radius: 5px;
+    font-weight: bold;
 }

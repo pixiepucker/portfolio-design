@@ -86,7 +86,7 @@ header nav ul li a:hover {
 .hero-intro h2 {
     border-bottom: 2px solid #ffd147;
     font-size: 60px;
-    font-style: oblique;
+    font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
     padding: 5px;
@@ -131,4 +131,28 @@ header nav ul li a:hover {
     right: 600px;
     border-radius: 100%;
     border: #ffd147 dashed 4px;
+}
+
+/*about me style start*/
+.about-me {
+    background-color: #fee6ed;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-me h3 {
+    font-style: italic;
+    font-size: 25px;
+    color: #202a25;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 2px solid #202a25;
+    display: inline-block;
+    margin: 5px;
+}
+
+.about-me p{
+    color: #202a25;
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: left;
 }

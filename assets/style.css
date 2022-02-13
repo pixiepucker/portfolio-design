@@ -156,3 +156,41 @@ header nav ul li a:hover {
     line-height: 1.7;
     text-align: left;
 }
+
+/*projects style start */
+.projects {
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+.projects h3 {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #202a25;
+    margin: 10px;
+}
+
+.projects h4 {
+    font-size: 20px;
+    color: #e79aa9;
+    margin: 10px;
+}
+
+.projects-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.my-work {
+    display: inline-block;
+    flex: 0 0 auto;
+    margin: 15px;
+}
+
+.my-work img {
+    width: 250px;
+    height: 250px;
+    border: #ffd147 solid 3px;
+}

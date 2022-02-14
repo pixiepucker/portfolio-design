@@ -129,8 +129,8 @@ header nav ul li a:hover {
 .alyc {
     width: 250px;
     height: 250px;
-    position: relative;
-    top: 100px;
+    position: absolute;
+    top: 175px;
     right: 600px;
     border-radius: 100%;
     border: #ffd147 dashed 4px;
@@ -161,41 +161,63 @@ header nav ul li a:hover {
 }
 
 /*projects style start */
-.projects {
+.myprojects {
     text-align: center;
     align-items: center;
     padding: 20px;
 }
-.projects h3 {
+.myprojects h3 {
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     color: #202a25;
-    margin: 10px;
+    margin: 5px;
 }
 
-.projects h4 {
+.myprojects h4 {
     font-size: 20px;
     color: #e79aa9;
-    margin: 10px;
+    margin: 5px;
 }
 
-.projects-flexbox {
+.myprojects-flexbox {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: scroll;
+    justify-content: space-between;
 }
 
 .my-work {
     display: inline-block;
     flex: 0 0 auto;
-    margin: 15px;
+    margin: 10px;
+}
+
+.works {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+    background-color: #ffd147;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f9afbc;
+    border-radius: 10px;
 }
 
 .my-work img {
-    width: 250px;
-    height: 250px;
+    width: 275px;
+    height: 275px;
     border: #ffd147 solid 3px;
+
+}
+
+.my-work img:last-child {
+    margin: 20px;
 }
 
 /*contact me style start */
@@ -248,7 +270,7 @@ header nav ul li a:hover {
 .contact-info ul li a:hover {
     padding: 10px;
     color: #e79aa9;
-    background-color: #ffd147;
+    background-color: #ffdb70;
     border: #e79aa9 solid 1px;
     border-radius: 5px;
     font-weight: bold;
@@ -267,18 +289,26 @@ footer h2 {
     align-items: center;
     color: #f9afbc;
     font-size: 20px;
-    margin: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 footer div {
     color: #f9afbc;
-    line-height: 1.3;
     text-align: right;
+    align-items: center;
+    margin-bottom: 20px;
+    display: flex;
 }
 
 /*mediaqueries start*/
+
+/*for screens 980px and smaller*/
 @media screen and (max-width:980px) {
     header {
+        justify-content:space-between;
         padding-bottom: 0;
         position: relative;
     }
@@ -300,4 +330,63 @@ footer div {
         left: 290px;
         bottom: 7px;
     }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .hero-intro, .hero-imgs {
+        width: 100%;
+    }
+
+    .hero-intro {
+        justify-content:center;
+    }
+
+    .hero-imgs {
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .pinky {
+        top: 50px;
+        left: 125px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .alyc {
+        top: 115px;
+        left: 20px;
+        width:200px;
+        height: 200px;
+    }
+
+    .contact {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    .contact-info {
+        justify-content: center;
+        position: relative;
+        padding-bottom: 0;
+    }
+
+    .contact-info ul {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact-info ul li a{
+        font-size: 2.00vw;
+        margin: 10px 0;
+    }
+}
+
+/*for screen 768px and smaller*/
+@media screen and (max-width: 768px) {
+    
 }
